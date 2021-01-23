@@ -1,0 +1,24 @@
+.call {
+    flex-shrink: 0;
+}
+
+.call__link {
+    @include font(20px, 1.17, 700);
+    @include link-reset();
+    position: relative;
+    padding-left: 30px;
+    color: $color-accent-dark;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+        color: $color-accent-light;
+    }
+
+    &::before {
+        @include pseudo(20px, 20px);
+        top: 0;
+        left: 0;
+        background: url("../images/icon-phone.svg");
+    }
+}

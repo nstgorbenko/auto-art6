@@ -1,0 +1,107 @@
+.risks {
+    min-height: 584px;
+    background: url("../images/risks.jpg") no-repeat;
+    background-position: calc(50% - 560px) 0;
+
+    @media (max-width: $desktop-width) {
+        background-position: calc(100vw - 1920px) 0;
+    }
+}
+
+.risks__wrapper {
+    display: flex;
+    width: 1313px;
+    margin: 0 auto;
+
+    @media (max-width: $desktop-width) {
+        width: 68.43%;
+    }
+
+    @media (max-width: $tablet-width-max) {
+        width: 80%;
+    }
+}
+
+.risks__content {
+    width: 687px;
+    margin-top: 44px;
+    margin-left: auto;
+
+    @media (max-width: $tablet-width-max) {
+        width: 100%;
+    }
+}
+
+.risks__title {
+    @include reset();
+    @include font(32px, 1.44, 700);
+    margin-bottom: 68px;
+    text-transform: uppercase;
+    background-image: $main-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: $tablet-width-max) {
+        text-align: center;
+    }
+}
+
+.risks__list {
+    @include list-reset();
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $mobile-width) {
+        justify-content: center;
+    }
+}
+
+.risks__item {
+    position: relative;
+    width: 50%;
+    max-width: 317px;
+    margin-bottom: 42px;
+    padding-top: 74px;
+
+    &::before {
+        @include pseudo(52px, 52px);
+        top: 0;
+        left: 0;
+        background: no-repeat 0 0;
+    }
+
+    &--money::before {
+        background-image: url("../images/icon-money.svg");
+    }
+
+    &--insurance::before {
+        background-image: url("../images/icon-insurance.svg");
+    }
+
+    &--commission::before {
+        background-image: url("../images/icon-commission.svg");
+    }
+
+    &--time::before {
+        background-image: url("../images/icon-time.svg");
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 100%;
+    }
+}
+
+.risks__item-title {
+    @include reset();
+    @include font(24px, 1.42);
+    margin-bottom: 14px;
+    color: $color-primary;
+}
+
+.risks__item-text {
+    @include reset();
+    @include font(16px, 1.5, 300);
+    font-family: "Roboto", sans-serif;
+    color: $color-primary;
+}

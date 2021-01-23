@@ -1,0 +1,12 @@
+.page {
+    @include reset();
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: $color-primary;
+}
+
+.page__footer {
+    margin-top: auto;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автозащита</title>
+    <meta name="description" content="Выкуп авто в любом состоянии. В Краснодаре и крае">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png">
+    <link href="./assets/sass/style.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <header class="main-header page__header">
+        <nav class="main-navigation main-header__navigation">
+            <a class="main-navigation__logo" href="#">
+                <img class="main-navigation__logo-image" src="./assets/images/header-logo.svg" width="179" height="64" alt="Логотип «Автозащита»">
+            </a>
+            <ul class="site-list main-navigation__list">
+                <li class="site-list__item"><a class="site-list__link" href="#">Ваша выгода</a></li>
+                <li class="site-list__item"><a class="site-list__link" href="#">Документы</a></li>
+                <li class="site-list__item"><a class="site-list__link" href="#">Наши выплаты</a></li>
+                <li class="site-list__item"><a class="site-list__link" href="#">Условия выкупа</a></li>
+                <li class="site-list__item"><a class="site-list__link" href="#">Онлайн-оценка</a></li>
+            </ul>
+            <div class="call main-header__call">
+                <a class="call__link" href="tel:+79189571336" aria-label="Позвонить нам">+7 (918) 957-13-36</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main page__main">
+        <section class="promo main__promo">
+            <div class="promo__wrapper">
+                <div class="promo__text">
+                    <p class="promo__text-place">В Краснодаре и крае</p>
+                    <h1 class="promo__text-lead">
+                        <span class="visually-hidden">Автозащита.</span>
+                        Выкуп авто<br> в любом состоянии</h1>
+                    <p class="promo__text-about">Получите до 90% рыночной цены за авто уже сегодня!</p>
+                </div>
+                <form class="form promo__form" method="post" action="#">
+                    <h2 class="form__title">Узнать сумму выкупа авто</h2>
+                    <div class="form__content">
+                        <p class="form__item">
+                            <label class="form__item-name" for="auto">Ваш автомобиль</label>
+                            <input class="form__item-field" type="text" name="auto" id="auto" placeholder="Lada Granta, 2016 г.в."
+                              required>
+                          </p>
+                          <p class="form__item">
+                            <label class="form__item-name" for="phone">Номер телефона</label>
+                            <input class="form__item-field" type="tel" name="phone" id="phone" placeholder="+7 999 999 99 99" required>
+                          </p>
+                          <button class="form__button" type="submit">Отправить</button>
+                          <p class="form__note">Отправляя форму, вы соглашаетесь с условиями обработки персональных данных</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="risks main__risks">
+            <div class="risks__wrapper">
+                <div class="risks__content">
+                    <h2 class="risks__title">Вы ничем не рискуете</h2>
+                    <ul class="risks__list">
+                        <li class="risks__item risks__item--money">
+                            <p class="risks__item-title">Деньги сразу</p>
+                            <p class="risks__item-text">Полную стоимость авто вы&nbsp;получите сразу после оформления сделки.</p>
+                        </li>
+                        <li class="risks__item risks__item--insurance">
+                            <p class="risks__item-title">Сделка застрахована</p>
+                            <p class="risks__item-text">Все документы оформляются<br> согласно текущему законодательству&nbsp;РФ.</p>
+                        </li>
+                        <li class="risks__item risks__item--commission">
+                            <p class="risks__item-title">Никаких комиссий</p>
+                            <p class="risks__item-text">Не&nbsp;согласны с&nbsp;ценой авто&nbsp;&mdash; просто уезжаетеи ни&nbsp;за&nbsp;что не&nbsp;платите.</p>
+                        </li>
+                        <li class="risks__item risks__item--time">
+                            <p class="risks__item-title">Быстро, как никогда</p>
+                            <p class="risks__item-text">Процесс продажи авто занимает не&nbsp;более 2&nbsp;часов.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer page__footer">
+        <div class="main-footer__wrapper">
+            <div class="main-footer__links">
+                <a class="main-footer__privacy" href="#">Политика конфиденциальности</a>
+                <p class="main-footer__copyright">Copyright © 2019</p>
+                <a class="main-footer__studio" href="https://art6.ru/" target="_blank" aria-label="Digital-агентство ART6">
+                    <img class="main-footer__studio-image" src="./assets/images/icon-art6.svg" width="57" height="22" alt="Digital-агентство ART6»">
+                </a>
+            </div>
+    
+            <a class="main-footer__logo" href="#">
+                <img class="main-footer__logo-image" src="./assets/images/footer-logo.svg" width="105" height="90" alt="Логотип «Автозащита»">
+            </a>
+    
+            <ul class="contacts main-footer__contacts">
+                <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+79189571336" aria-label="Позвонить нам">+7 (918) 957-13-36</a>
+                </li>
+                <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:avto.vucup23@mail.ru" aria-label="Написать на электронную почту">avto.vucup23@mail.ru</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

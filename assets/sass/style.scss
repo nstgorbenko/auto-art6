@@ -1,0 +1,23 @@
+// Utils
+@import "./utils/mixins";
+@import "./utils/variables";
+
+
+// Base
+@import "./base/fonts";
+@import "./base/global";
+@import "./base/normalize";
+
+
+// Blocks
+@import "./blocks/page";
+@import "./blocks/call";
+@import "./blocks/contacts";
+@import "./blocks/form";
+@import "./blocks/main-footer";
+@import "./blocks/main-header";
+@import "./blocks/main-navigation";
+@import "./blocks/main";
+@import "./blocks/promo";
+@import "./blocks/risks";
+@import "./blocks/site-list";

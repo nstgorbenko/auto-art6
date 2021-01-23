@@ -1,0 +1,31 @@
+@mixin font($size, $height: 1.17, $weight: 400) {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+}
+
+@mixin link-reset {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+@mixin list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin pseudo($width, $height, $content: "") {
+    content: $content;
+    position: absolute;
+    width: $width;
+    height: $height;
+}
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}

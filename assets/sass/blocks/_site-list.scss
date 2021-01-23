@@ -1,0 +1,29 @@
+.site-list {
+    @include list-reset();
+    @include font(16px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 47.6%;
+
+    @media (max-width: $tablet-width) {
+        width: 55%;
+        justify-content: space-around;
+    }
+
+    @media (max-width: $mobile-width) {
+        display: none;
+    }
+}
+
+.site-list__link {
+    @include link-reset();
+    @include font(16px);
+    color: inherit;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+        color: $color-accent-light;
+    }
+}

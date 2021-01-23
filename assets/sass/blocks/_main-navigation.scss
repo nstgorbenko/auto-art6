@@ -1,0 +1,15 @@
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1326px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-navigation__logo {
+    padding-top: 7px;
+    padding-right: 6px;
+}

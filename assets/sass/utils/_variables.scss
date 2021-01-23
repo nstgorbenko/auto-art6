@@ -1,0 +1,22 @@
+// Viewport
+
+$mobile-width-min: 420px;
+$mobile-width: 767px;
+$tablet-width-max: 1000px;
+$tablet-width: 1279px;
+$desktop-width: 1920px;
+
+// Colors
+
+$black: #000000;
+$white: #ffffff;
+
+$color-primary: #4f4f4f;
+$color-light: #828282;
+$color-placeholder: rgba(0, 0, 0, 0.5);
+$color-accent-dark: #3e0d41;
+$color-accent-light: #eb5d56;
+$color-back: rgba(51, 51, 51, 0.6);
+
+$main-gradient: linear-gradient(91.17deg, #eb5d56 0.01%, #390a40 100.01%);
+$secondary-gradient: linear-gradient(91.17deg, #812c49 0.01%, #390a40 100.01%);

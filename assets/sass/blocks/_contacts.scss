@@ -1,0 +1,25 @@
+.contacts {
+    @include list-reset();
+    padding-top: 15px;
+    min-width: 204px;
+
+    @media (max-width: $mobile-width) {
+        order: -1;
+    }
+}
+
+.contacts__item {
+    margin-bottom: 16px;
+}
+
+.contacts__link {
+    @include link-reset();
+    @include font(20px);
+    color: $color-primary;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+        color: $color-accent-light;
+    }
+}
